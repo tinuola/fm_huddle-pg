@@ -49,6 +49,20 @@ header {
   width: 140px;
 }
 
+main {
+  padding-bottom: 2rem;
+}
+
+.row {
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .row {
+    
+  }
+}
+
 .col {
   padding: 2rem 0;
   text-align: center;
@@ -64,6 +78,16 @@ h2 {
 p {
   font-size: 1.125rem;
   font-weight: 300;
+}
+
+button {
+  /* font-size: .85rem; */
+  font-family: var(--body-font);
+  background-color: var(--white);
+  color: var(--primary-color);
+  padding: .75rem 4rem;
+  border-radius: 1.5rem;
+  border: none;
 }
 
 .fm-attribution {
