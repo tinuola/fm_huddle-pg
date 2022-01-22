@@ -1,0 +1,99 @@
+:root {
+	--primary-color: hsl(257, 40%, 49%);
+	--secondary-color: hsl(300, 69%, 71%);
+	--white: hsl(0, 0%, 100%);
+	--heading-font: 'Poppins', sans-serif;
+	--body-font: 'Open Sans', sans-serif;
+}
+
+body {
+	text-rendering: optimizeSpeed;
+	font-family: var(--body-font);
+	font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--primary-color);
+	color: var(--white);
+}
+
+.main-container {
+  min-height: 100vh;
+	background-image: url('/assets/images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2.75rem;
+}
+
+@media (min-width: 600px){
+  .main-container {
+    background-image: url('/assets/images/bg-desktop.svg');
+  }
+}
+
+header {
+  padding-bottom: 2rem;
+}
+
+/* Hidden h1 for accessibility */
+.sr-only {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+.site-logo {
+  width: 140px;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+.row {
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .row {
+    
+  }
+}
+
+.col {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+button {
+  /* font-size: .85rem; */
+  font-family: var(--body-font);
+  background-color: var(--white);
+  color: var(--primary-color);
+  padding: .75rem 4rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+.fm-attribution {
+	font-size: 11px;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
