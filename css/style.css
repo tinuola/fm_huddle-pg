@@ -1,34 +1,49 @@
 :root {
-  --primary-color: hsl(257, 40%, 49%);
-  --secondary-color: hsl(300, 69%, 71%);
-  --white: hsl(0, 0%, 100%);
-  --heading-font: 'Poppins', sans-serif;
-  --body-font: 'Open Sans', sans-serif;
+	--primary-color: hsl(257, 40%, 49%);
+	--secondary-color: hsl(300, 69%, 71%);
+	--white: hsl(0, 0%, 100%);
+	--heading-font: 'Poppins', sans-serif;
+	--body-font: 'Open Sans', sans-serif;
 }
 
 body {
+	
+	text-rendering: optimizeSpeed;
+	font-family: var(--body-font);
+	font-size: 16px;
+
+}
+
+.main-container {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  font-family: var(--body-font);
-  font-size: 16px;
+	background-color: var(--primary-color);
+	color: var(--white);
+	background-image: url('/assets/images/bg-mobile.svg');
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 600px){
+  .main-container {
+    background-image: url('/assets/images/bg-desktop.svg');
+  }
 }
 
 /* Hidden h1 for accessibility */
 .sr-only {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
 }
 
-.fm-attribution { 
-  font-size: 11px;
+.fm-attribution {
+	font-size: 11px;
 }
 
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
