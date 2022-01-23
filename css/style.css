@@ -97,10 +97,31 @@ button:hover {
   cursor: pointer;
 }
 
-.fm-attribution {
-	font-size: 11px;
+footer {
+  padding: 2.5rem 0 2rem 0;
 }
 
-.attribution a {
-	color: hsl(228, 45%, 44%);
+.sm-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 250px;
+  width: 100%;
+}
+
+ion-icon {
+  font-size: 24px;
+}
+
+.fm-attribution-row {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.fm-attribution {
+	font-size: .75rem;
+}
+
+.fm-attribution a {
+	color: var(--secondary-color);
 }

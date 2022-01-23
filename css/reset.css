@@ -18,3 +18,8 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* Remove list styles on ul, ol elements */
+ul, ol {
+  list-style: none;
+}
