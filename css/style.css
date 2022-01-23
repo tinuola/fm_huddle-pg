@@ -23,7 +23,7 @@ body {
   padding: 2.75rem;
 }
 
-@media (min-width: 600px){
+@media (min-width: 768px){
   .main-container {
     background-image: url('/assets/images/bg-desktop.svg');
   }
@@ -51,16 +51,12 @@ header {
 
 main {
   padding-bottom: 2rem;
+  max-width: 829px;
+  width: 100%;
 }
 
 .row {
   text-align: center;
-}
-
-@media (min-width: 768px){
-  .row {
-    
-  }
 }
 
 .col {
@@ -83,17 +79,85 @@ p {
 button {
   /* font-size: .85rem; */
   font-family: var(--body-font);
-  background-color: var(--white);
+  background: var(--white);
   color: var(--primary-color);
   padding: .75rem 4rem;
   border-radius: 1.5rem;
   border: none;
+  margin-top: 1.5rem;
+  transition: background 250ms;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Main section media query */
+@media (min-width: 768px){
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col {
+    text-align: left;
+    flex-basis: 47%;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: .875rem;
+  }
+}
+
+footer {
+  padding: 2.5rem 0 2rem 0;
+}
+
+.sm-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 200px;
+  width: 100%;
+}
+
+ion-icon {
+  font-size: 24px;
+}
+
+.fm-attribution-row {
+  margin-top: 1.25rem;
+  text-align: center;
 }
 
 .fm-attribution {
-	font-size: 11px;
+	font-size: .75rem;
 }
 
-.attribution a {
-	color: hsl(228, 45%, 44%);
+.fm-attribution a {
+	color: var(--secondary-color);
 }
+
+/* Footer media query */
+@media (min-width: 768px){
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .sm-row {
+    margin: unset;
+  }
+
+  .fm-attribution-row {
+    text-align: right;
+  }
+}
+
