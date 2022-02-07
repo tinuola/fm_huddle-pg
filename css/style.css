@@ -8,26 +8,38 @@
 
 body {
 	text-rendering: optimizeSpeed;
-  background-color: var(--primary-color);
 	color: var(--white);
 	font-family: var(--body-font);
 	font-size: 16px;
+  background-color: var(--primary-color);
+  background-image: url('/assets/images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.main-container {
+@media (min-width: 768px){
+  body {
+    background-image: url('/assets/images/bg-desktop.svg');
+  }
+}
+
+.site-container {
   min-height: 100vh;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
   width: 100%;
-	background-image: url('/assets/images/bg-mobile.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 2rem 4rem 0rem 4rem;
-  display: grid;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-container {
+  margin-bottom: 6rem;
 }
 
 header {
-  padding-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* Hidden h1 for accessibility */
@@ -46,17 +58,17 @@ header {
   width: 125px;
 }
 
-main {
-  /* padding-bottom: 2rem; */
-}
-
 .row {
   text-align: center;
 }
 
 .col {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   text-align: center;
+}
+
+.col-one{
+  margin-bottom: 4rem;
 }
 
 .product-img {
@@ -64,24 +76,23 @@ main {
   margin: 0 auto;
 }
 
-h2 {
+.col-two h2 {
   font-family: var(--heading-font);
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1.25rem;
 }
 
-p {
-  font-size: 1.125rem;
-  font-weight: 300;
-  line-height: 1.75;
-}
-
 .col-two p {
-      margin: 0 auto;
-      max-width: 350px;
-      width: 100%;
+  /* margin: 0 auto; */
+  /* max-width: 350px;
+  width: 100%; */
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  letter-spacing: .5px;
 }
 
 button {
@@ -91,7 +102,6 @@ button {
   padding: .75rem 4rem;
   border-radius: 1.5rem;
   border: none;
-  margin-top: 1.5rem;
   transition: background 250ms;
 }
 
@@ -137,7 +147,7 @@ ion-icon {
   }
 
   .main-container {
-    background-image: url('/assets/images/bg-desktop.svg');
+    /* background-image: url('/assets/images/bg-desktop.svg'); */
   }
 
   .row {
@@ -147,7 +157,7 @@ ion-icon {
 
   .col {
     text-align: left;
-    flex-basis: 48.5%;
+    /* flex-basis: 48.5%; */
   }
 
   h2{
@@ -205,8 +215,8 @@ ion-icon {
   } */
 
   .col-two p {
-    max-width: 475px;
-    font-size: 1.25rem;
+    /* max-width: 475px;
+    font-size: 1.25rem; */
   }
 
   button {
