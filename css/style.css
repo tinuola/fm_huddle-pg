@@ -120,7 +120,7 @@ ion-icon {
 }
 
 .fm-attribution a {
-	color: var(--secondary-color);
+	color: var(--white);
 }
 
 /* Media Queries */
