@@ -29,7 +29,7 @@ body {
 }
 
 .content-container {
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 header {
@@ -150,8 +150,12 @@ ion-icon {
     background-size: cover;
   }
 
+  header {
+    margin-bottom: 5rem;
+  }
+
   .site-logo {
-    width: 140px;
+    width: 150px;
   }
 
   .row {
@@ -194,8 +198,12 @@ ion-icon {
 }
 
 @media (min-width: 1200px){
+  .site-container {
+    padding: 4rem;
+  }
+
   .site-logo {
-    width: 150px;
+    width: 190px;
   }
 
   .col-one {
