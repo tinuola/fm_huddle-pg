@@ -179,8 +179,10 @@ ion-icon {
   .col-two p {
     margin-left: 0;
     margin-right: 0;
-    font-size: 1.25rem;
-    max-width: 500px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    max-width: 550px;
   }
 
   footer {
@@ -219,6 +221,12 @@ ion-icon {
     padding-top: 3rem;
   }
 
+  .col-two h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1299px){
   .col-two h2 {
     font-size: 2.5rem;
   }
