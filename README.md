@@ -12,5 +12,5 @@ Users should be able to:
 
 ### Solution
 
-Live Site: [https://tinuola.github.io/fm-huddle-pg/](https://tinuola.github.io/fm-huddle-pg/)
+Live Site: [https://tinuola.github.io/fm_huddle-pg/](https://tinuola.github.io/fm_huddle-pg/)
 
